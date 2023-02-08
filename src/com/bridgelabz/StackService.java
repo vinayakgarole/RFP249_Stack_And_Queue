@@ -16,6 +16,20 @@ public class StackService {
         head = newNode;
     }
 
+    public Node pop() {
+        System.out.println("Popped element is: " + head.data);
+        head = head.next;
+        return head;
+    }
+
+    public void peak() {
+
+        if (head != null) {
+            System.out.println("Top of the stack is: " + head.data);
+        } else {
+            System.out.println("No elements left is the stack.");
+        }
+    }
     public void printList() {
 
         if (head == null) {
